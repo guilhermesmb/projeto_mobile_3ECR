@@ -9,13 +9,13 @@ export default function Button({children}) {
 }
 
 const styles = StyleSheet.create({
-    button: {
+    button:{
         backgroundColor: '#121A2C',
         color: '#FFBA26',
         paddingVertical: 8,
         paddingHorizontal: 48,
-        borderRadius: 5,
+        borderRadius: 4,
         marginTop: 16,
-        marginBottom: 8
-      },
+        marginBottom: 16
+      }
 })

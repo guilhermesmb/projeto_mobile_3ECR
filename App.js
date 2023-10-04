@@ -10,8 +10,8 @@ export default function App() {
       <Text>Sistema</Text>
       <Text style={styles.title}>Comanda</Text>
       
-      <Input>E-mail</Input>
-      <Input>Senha</Input>
+      <Input placeholder='e-mail'/>
+      <Input placeholder='senha' secureTextEntry/>
 
       <Button>Entrar</Button>
       <Button>Criar Conta</Button>
@@ -30,16 +30,16 @@ const styles = StyleSheet.create({
   },
 
   title: {
-    color: '#0000FF',
+    color: '#121A2C',
     fontSize: 34,
-    fontWeight: 'bold'
+    fontWeight: 'bold',
   },
 
-  image: {
+image: {
     height: 200,
     width: '100%',
     position: 'absolute',
     top: 0,
   }
-
+  
 });
