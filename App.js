@@ -6,9 +6,9 @@ import Input from './components/input'
 export default function App() {
   return (
     <View style={styles.container}>
-      <Image style={styles.image} source={require('./assets/home.png')}/>
+      <Image style={styles.image} source={require('./assets/home.jpg')}/>
       <Text>Sistema</Text>
-      <Text style={styles.title}>Comanda</Text>
+      <Text style={styles.title}>Auxílio de compras</Text>
       
       <Input placeholder='e-mail'/>
       <Input placeholder='senha' secureTextEntry/>
