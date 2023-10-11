@@ -1,4 +1,4 @@
-import { View } from "react-native-web";
+import { StyleSheet, View, Text } from "react-native";
 import Input from "../components/input";
 import Button from '../components/button';
 
