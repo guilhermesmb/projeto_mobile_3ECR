@@ -1,45 +1,17 @@
-import { StatusBar } from 'expo-status-bar';
-import { Image, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
-import Button from './components/button';
-import Input from './components/input'
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import Comanda from './screens/Comanda';
+import Login from './screens/Login';
+
+const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Image style={styles.image} source={require('./assets/home.jpg')}/>
-      <Text>Sistema</Text>
-      <Text style={styles.title}>Auxílio de compras</Text>
-      
-      <Input placeholder='e-mail'/>
-      <Input placeholder='senha' secureTextEntry/>
-
-      <Button>Entrar</Button>
-      <Button>Criar Conta</Button>
-
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="Login" component={Login} />
+        <Stack.Screen name="Comanda" component={Comanda} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#FCFBFF',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-
-  title: {
-    color: '#121A2C',
-    fontSize: 34,
-    fontWeight: 'bold',
-  },
-
-image: {
-    height: 200,
-    width: '100%',
-    position: 'absolute',
-    top: 0,
-  }
-  
-});
