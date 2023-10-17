@@ -1,22 +1,18 @@
-import { StatusBar } from 'expo-status-bar';
-import { Image, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
+import { StyleSheet, View, Text } from "react-native";
+import Input from "../components/input";
 import Button from '../components/button';
-import Input from '../components/input'
 
-export default function Login({ navigation }) {
+export default function Cadastro() {
   return (
     <View style={styles.container}>
       <Image style={styles.image} source={require('../assets/home.jpg')}/>
       <Text>.</Text>
-      <Text style={styles.title}>Auxílio de compras</Text>
+      <Text style={styles.title}>Cadastro de Funcionários</Text>
       
       <Input placeholder='E-mail'/>
       <Input placeholder='Senha' secureTextEntry/>
 
-      <Button onPress={() => navigation.navigate('Comanda')}>Entrar</Button>
-      <Button onPress={() => navigation.navigate('Cadastro')}>Cadastrar Funcionário</Button>
-      
-      <StatusBar style="auto" />
+      <Button onPress={() => navigation.navigate('Login')}>Cadastrar</Button>
     </View>
   );
 }
