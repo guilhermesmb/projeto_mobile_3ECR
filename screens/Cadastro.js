@@ -1,6 +1,7 @@
-import { StyleSheet, View, Text } from "react-native";
-import Input from "../components/input";
+import { StatusBar } from 'expo-status-bar';
+import { Image, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
 import Button from '../components/button';
+import Input from '../components/input'
 
 export default function Cadastro() {
   return (
@@ -13,6 +14,7 @@ export default function Cadastro() {
       <Input placeholder='Senha' secureTextEntry/>
 
       <Button onPress={() => navigation.navigate('Login')}>Cadastrar</Button>
+      <Button onPress={() => navigation.navigate('Login')}>Voltar</Button>
     </View>
   );
 }
@@ -27,7 +29,7 @@ const styles = StyleSheet.create({
 
   title: {
     color: '#121A2C',
-    fontSize: 34,
+    fontSize: 28,
     fontWeight: 'bold',
   },
 
