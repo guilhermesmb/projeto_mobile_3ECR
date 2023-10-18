@@ -1,0 +1,18 @@
+{
+  "produtos": [
+
+    { 
+    "imagePath": "https://imgs.ponto.com.br/55064614/1g.jpg", 
+    "nome": "iphone", 
+    "preco": 10.000,
+    "id": 1
+    },
+
+    { 
+    "imagePath": "https://http2.mlstatic.com/D_NQ_NP_670220-MLU69175886029_052023-O.webp", 
+    "nome": "ipad", 
+    "preco": 50.000,
+    "id": 2
+    } 
+  ]
+}
