@@ -1,26 +1,31 @@
-import { StyleSheet, View, Text } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
+import Button from "../components/button";
 import Input from "../components/input";
-import Button from '../components/button';
 
-export default function Comanda() {
-    return (
+export default function Comanda({navigation}){
+    return(
         <View style={styles.container}>
+
             <View>
                 <Text>Olá,</Text>
-                <Text>Arthur</Text>
+                <Text>João Carlos</Text>
             </View>
 
             <View>
                 <Input />
-                <Button>confirmar</Button>
+                <Button onPress={() => navigation.navigate("Produtos")}>confirmar</Button>
             </View>
 
             <Text>
-                Digite o código da comanda para iniciar um pedido
+                Digite o código da comanda 
+                para iniciar um pedido
             </Text>
+
         </View>
+
     )
 }
+
 
 const styles = StyleSheet.create({
     container: {
@@ -29,4 +34,4 @@ const styles = StyleSheet.create({
       alignItems: 'center',
       justifyContent: 'center',
     },
-});
+})

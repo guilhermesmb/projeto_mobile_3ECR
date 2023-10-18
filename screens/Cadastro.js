@@ -6,7 +6,7 @@ import Input from '../components/input'
 export default function Cadastro() {
   return (
     <View style={styles.container}>
-      <Image style={styles.image} source={require('../assets/home.jpg')}/>
+      <Image style={styles.image} source={require('../assets/cadastro.jpg')}/>
       <Text>.</Text>
       <Text style={styles.title}>Cadastro de Funcionários</Text>
       
